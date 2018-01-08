@@ -1,0 +1,118 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    #bg {
+        position: relative;
+        background-image:url('/assets/images/slider/sli_1_big.png'); 
+        background-repeat:no-repeat;background-size:100% auto;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            background: rgba(195,188,174, 0.6);
+            bottom: 0;
+            max-width: 750px;
+            width: 750px;
+        }
+    }
+
+    .flio_l {
+        float: left;
+        width: 83%;
+        .featured {
+            .title-featured {
+                margin: 100px 0 21px 0;
+                color: #fff;
+                padding: 10px 20px 10px 20px;
+                display: inline-block;
+                background-color: #6d6c6c;
+                text-transform: uppercase;
+                font-size: 30px;
+                line-height: 30px;
+                text-align: right;
+            }
+            .wedding {
+                color:  #4c4c4c;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 20px;
+                span {
+                    background-color: #fff;
+                    padding: 20px;
+                }
+
+            }
+        } 
+    }
+    #ul_slider {
+        margin: 0;
+        float: right;
+        width: 16.519%;
+        height: auto;
+        background-color: #fff;
+        padding: 15px;
+        list-style: none;
+        padding-top: 44px;
+        position: relative;
+        #control_slider {
+            position: absolute;
+            top: 14px;
+            left: 67px;
+            .dot1 {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .dot2 {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+        }
+        #controls {
+            position: absolute;
+            top: 12px;
+            cursor: pointer;
+            #play {
+                display : none;
+            }
+        }
+        .numbertext {
+            color: #4c4c4c;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 3px;
+            right: 10px;
+        }
+        .round {
+            border-radius: 50%;
+        }
+        li {
+            margin-bottom: 15px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

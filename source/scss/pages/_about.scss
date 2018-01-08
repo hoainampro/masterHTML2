@@ -1,0 +1,72 @@
+.main {
+    .flio_l {
+        .logo {
+            margin-bottom: 60px;
+        }
+        .fa-chevron {
+            display: block;
+            text-align: right;
+            padding-right: 40px;
+            i {
+                background-color: #fff;
+                padding: 7px;
+                color: #4c4c4c;
+            }
+        }
+        .content_about {
+            background: rgba(245,240,236, 0.9);
+            margin-right: 40px;
+            padding: 30px;
+            font-size: 12px;
+            line-height: 1.6;
+            height: 842px;
+            .title_about {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #4c4c4c;
+                border-left-style: solid;
+                border-left-color: #86b11e;
+                padding-left: 10px;
+                border-left-width: 5px;
+                margin-bottom: 30px;
+            }
+            p {
+                margin: 0 0 30px;
+            }
+            p.aecenas {
+                margin-top: 30px;
+            }
+            .about_img {
+                .img-about {
+                    border: 2px solid #cccccc;
+                    padding: 3px;
+                    float: left;
+                    width: 30%;
+                }
+                p.abu {
+                    width: 68%;
+                    float: left;
+                    padding-left: 30px;
+                }
+                &:after {
+                    content: '';
+                    clear: both;
+                }
+            }
+        }
+        .content_about_last {
+            display: inline-block;
+            span {
+                display: block;
+                float: right;
+                width: 94%;
+                font-style: italic;
+                color: #7c7b79;
+            }
+            &:after {
+                content: '';
+                clear: both;
+            }
+        }
+    }
+} 
